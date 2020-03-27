@@ -15,7 +15,7 @@ describe('NGO', () => {
 
     it('should create a new NGO', async () => {
         const response = await request(app)
-            .post('ngos')
+            .post('/ngos')
             .send({
                 name: "Super NGO",
                 city: "Florianópolis",
