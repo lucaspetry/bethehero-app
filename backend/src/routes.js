@@ -15,6 +15,7 @@ routes.post('/session', celebrate({
 }), SessionController.store);
 
 routes.get('/ngos', NGOController.index);
+
 routes.post('/ngos', celebrate({
     [Segments.BODY]: Joi.object().keys({
         name: Joi.string().required(),
